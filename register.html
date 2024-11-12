@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="login">
+        <h1>Registro en NexoGame</h1>
+        <form action="registro.php" method="post">
+            <label for="email">
+                <i class="fas fa-envelope"></i>
+            </label>
+            <input type="email" name="email" placeholder="Correo electrónico" id="email" required>
+
+            <label for="username">
+                <i class="fas fa-user"></i>
+            </label>
+            <input type="text" name="username" placeholder="Usuario" id="username" required>
+
+            <label for="password">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="password" name="password" placeholder="Contraseña" id="password" required>
+
+            <label for="confirm_password">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="password" name="confirm_password" placeholder="Confirmar contraseña" id="confirm_password" required>
+
+            <input type="submit" value="Registrarse">
+            <p style="padding: 10px;">¿Ya tienes una cuenta? <a href="index.html" style="color: #b333ff;">Inicia sesión aquí</a></p>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2e0059;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+
+
+.login {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Sombra alrededor del formulario */
+    text-align: center;
+    width: 700px;
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+}
+.login h1 {
+    color: #b333ff;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+.login input[type="text"],
+.login input[type="password"],
+.login input[type="email"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.login input[type="submit"] {
+    width: 70%;
+    background-color: #3bd0ff;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.login input[type="submit"]:hover {
+    background-color: #2bb7e1;
+}
+.login input[type="text"]:focus,
+.login input[type="password"]:focus,
+.login input[type="email"]:focus{
+    box-shadow: 0 0 8px rgba(59, 208, 255, 0.8);
+}
+.login label i {
+    color: #b333ff;
+    margin-right: 10px;
+    font-size: 20px;
+}

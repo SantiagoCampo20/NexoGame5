@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+
+}
+a:hover {
+    text-decoration: underline;
+    color: #8609db;
+}
+
+body {
+    background-color: #2e0059;
+    color: #fff;
+}
+
+
+/*Buscador en la pagina juegos*/
+.search-bar{
+    display: flex;
+    padding: 20px 40px;
+    justify-content: end;
+}
+.search-bar input{
+    padding: 10px;
+    padding-right: 35px;
+    border-radius: 5px 0 0 5px;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+}
+.search-bar button{
+    background-color:#110028;
+    padding: 11px 15px;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    cursor: pointer;
+}
+.search-bar button:hover{
+    background-color:#8609db;
+}
+
+/*Inicio de todas las paginas*/
+header {
+    background-color: #140029; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px 30px; 
+}
+header img {
+    width: 120px; 
+    height: auto; 
+}
+nav ul {
+    list-style: none; 
+    display: flex; 
+    gap: 20px;
+}
+nav ul li a {
+    color: #b945ff; 
+    text-decoration: none; 
+    font-size: 18px; 
+    font-weight: bold; 
+}
+
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+.login a i {
+    margin-right: 5px; 
+    vertical-align: middle;
+    font-size: 18px; /* Tamaño de los íconos */
+}
+.login a {
+    margin-right: 15px; 
+}
+.login a:hover {
+    color: #ff00ff;
+}
+
+.navtop {
+    display: flex;
+    gap: 20px; 
+}
+
+.nav-left {
+    padding: 10px;
+}
+.nav-left a {
+    color: #77ceff; 
+    text-decoration: none;
+}
+.nav-left a:hover{
+    color:#8609db;
+}
+
+.separator {
+    height: 40px;
+    width: 1px;
+    background-color: #b945ff;
+}
+
+
+
+/*Donde esta la imagen con el texto en la pagina de inicio*/
+.hero {
+    display: flex;
+    text-align: left;
+    padding: 220px;
+    padding-left: 50px;
+    min-height: 90vh;
+
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url(imagen/fondo1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.hero h1{
+    color: #00e0ff;
+    font-size:4rem;
+}
+
+/*Pagina de inicio, juegos destacados*/
+.destacados {
+    padding: 30px;
+}
+.destacados h2 {
+    padding-left: 200px;
+    text-align:left;
+    color: #00e0ff;
+    font-size: 2rem;
+}
+.juegos-destacados {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.juego {
+    background-color:black;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.juego p{
+    padding-top: 2%;
+    font-size: 30px;
+    text-align: left;
+}
+.juego img {
+    width: 420px;
+    border-radius: 10px;
+}
+
+/*pagina de inicia y dejuegos, juegos en lista*/
+.ofertas {
+    padding: 10px 15%;
+}
+.ofertas h2 {
+    padding-bottom:30px;
+    text-align:left;
+    color: #00e0ff;
+    font-size: 30px;
+}
+.oferta {
+    display:flex;
+    align-items: center;
+    background-color: #2b215f;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.oferta img{
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+.texto-oferta {
+    flex-grow: 1;
+}
+.texto-oferta p {
+    margin: 5px 0; 
+    line-height: 1px;
+    white-space: normal; 
+}
+
+
+/*final de todas las paginas*/
+.footer {
+    background-color: #110028;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between; /* Separar texto y logo */
+    align-items: center;
+}
+.contacto {
+    display: flex;
+    flex-direction: column;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contact-item img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px; 
+}
+.contact-item a {
+    color: #a3ffff;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo h2 {
+    color: #a464ff;
+    font-family: 'Arial', sans-serif;
+    margin-right: 10px;
+    font-size: 50px;
+}
+.logo img {
+    width: 130px;
+    height: auto;
+}
+
+
+/*Pagina unica (personal) para cada juego*/
+.game-details {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5%;
+}
+.game-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.game-images img {
+    width: auto;
+    height: 300px;
+    border-radius: 10px;
+}
+.game-info {
+    max-width: 500px;
+    background-color: #33275b;
+    padding: 15px;
+    border-radius: 10px;
+}
+.game-info h1{
+    color: #00e0ff;
+    padding: 10px;
+    font-size: 40px
+}
+.game-info p {
+    margin: 10px 10px;
+}
+.game-info p strong{
+    color: #00e0ff;
+}
+
+
+.txt-plataformas, .requirements h3{
+    color: #00e0ff;
+    padding: 10px 70px;
+    font-size: 33px
+}
+.plataformas {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+.plataforma {
+    background-color: #352a67;
+    padding: 10px 8%;
+    border-radius: 10px;
+    color: #cfcfff;
+    text-align: center;
+}
+.plataformas a {
+    text-decoration: none; 
+    padding: 10px 8%;
+}
+.plataforma img {
+    width: 30px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 50px;
+}
+
+
+.requirements {
+    margin: 20px;
+}
+.system-requirements {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+.system-requirements h4{
+    color:#8609db;
+    font-size: 26px;
+    margin: 10px;
+}
+.min-requirements, .rec-requirements {
+    background-color: #33275b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 47%;
+}
+
+
+/*Informacion de usuarios*/
+.content {
+    text-align:left;
+    padding: 30px;
+}
+.content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #82F4E7;
+}
+.content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    padding: 0px 30px;
+}
+.content table{
+    padding: 0px 50px;
+}
+
+/*Pestaña "Quienes somos"*/
+
+/*informacion e imagen*/
+.titu{
+    color: #00e0ff;
+    text-align:left;
+    padding: 30px 0 7px 170px;
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+.Descripcion {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    max-width: 95%; 
+    margin: 0 auto; 
+    padding: 30px;
+    gap: 30px;
+}
+.Descripcion .texto {
+    max-width: 40%;
+    text-align: justify;
+    font-size: 20px; 
+}
+.Descripcion .imagen img {
+    max-width: 550px; 
+    height: auto; 
+    border-radius: 10px;
+}
+
+
+/* Redes sociales*/
+
+#TituInsta{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 25px 0 0 1rem;
+    font-size: 3em;
+}
+
+#feed-contenedor{
+    background-color: rgb(189 189 189);
+    margin: 5rem 0;
+    width: 100%;
+    overflow: hidden;
+}
+.main-galery{
+    width: 100%;
+    display: flex;
+    align-items: relative;
+    position: relative
+}
+
+.chevron span{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    font-size: 2rem;
+    color: rgb(157 217 238);
+    width: 4.3rem;
+    height: 4.7rem;
+    background-color: rgba(23 23 23 0.9);
+    border-radius: 100%;
+    cursor: pointer;
+}
+.chevron span:hover{
+    background-color: rgba(23,23,23,0.6);
+}
+.chevron #prev{
+    padding-right: .5rem;
+    justify-content: flex-end;
+    left: -1.7rem;
+}
+.chevron #next{
+    padding-right: .5rem;
+    justify-content: flex-start;
+    left: -1.7rem;
+}
+
+.galery{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.image{
+    min-width: 20%;
+    height: 273px;
+    position: relative;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.image:hover .opacity-hover{
+    width: 100%;
+}
+.caption{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translateY(300px);
+    transition: transform 100ms linear;
+}
+
+.caption p{
+    color: white;
+    width: 80%;
+}
+
+.opacity-hover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: backgrount-color 300ms linear;
+}
+.opacity-hover:hover{
+    background-color: rgba(2, 2, 2, 0.8);
+}
+.opacity-hover:hover .caption{
+    transform: translateY(0px);
+}
