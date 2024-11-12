@@ -6,7 +6,7 @@ const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
 
 const token = 'IGQWRPeU9XdTlOZAkkxVmdvdTNLamJUMGNWZAXlwWldIblo4TjRISk1WOUhBVTlKVGx4RGZA6d2lVdlBuWVFKTFpfa0NLYkFIa2ZAxaEFCTTRNY1Y5Wk9pekxQVVVFZAXNMMHUzUmV2OWU4blY3R2RGNDBQcFhFT19LQk0ZD'
-const url = `https://graph.instagram.com/me/media?fields=thumbnail_url,media_url,caption,permalink&limit=80&access_token=IGQWRPeU9XdTlOZAkkxVmdvdTNLamJUMGNWZAXlwWldIblo4TjRISk1WOUhBVTlKVGx4RGZA6d2lVdlBuWVFKTFpfa0NLYkFIa2ZAxaEFCTTRNY1Y5Wk9pekxQVVVFZAXNMMHUzUmV2OWU4blY3R2RGNDBQcFhFT19LQk0ZD`;
+const url = `https://graph.instagram.com/me/media?fields=thumbnail_url,media_url,caption,permalink&limit=80&access_token=IGQWROWThLU3Fvd1FSandtTFVXeVFGMG5RdGlyWlRDTDJSbTZAnbG4zRUo0RTJGUHFqRVY3UTFTSHlVQ09haW1ROTZAqRENITzdhbWV6Wkk3ZA2gxR2pfMXZAYUUMxNmJHbGp2OHJacFd2dWZAOMjQxenMtYlUzaE5yR3MZD`;
 
 fetch(url)
 .then(res => res.json())
